@@ -1,40 +1,33 @@
-# HTML/CSS Resume Page
+# Portfolio
 
-## Overview
+This repository contains the source code for my personal portfolio website.  
+It showcases my projects, skills, experience, and other relevant information about my work.
 
-This project is a simple HTML and CSS resume page template, I'm using it to publish my own personal resume. \
-It is designed to present your professional experience, skills, and education in a clean and organized layout.
+## 📄 Resume (PDF)
 
-![image info](./img/preview.png)
+A downloadable version of my resume is available on the portfolio website.  
+The PDF file is **manually hosted in the root directory** of this project and linked from the site.
 
-## Features
-- Responsive Design: The resume page is responsive and adapts to different screen sizes, making it accessible across various devices.
-- Customizable: You can easily customize the content, styling, and layout to match your personal preferences and professional needs.
-- Clean and Professional Layout: The design focuses on clarity and readability, ensuring that your resume information is presented effectively.
+### 🔧 How to Update the PDF
 
-## Getting Started
-1. Clone the Repository:
-```
-git clone https://github.com/kenybapin/kenybapin.github.io.git
-```
-2. Open the HTML File:\
-Open the index.html file in your preferred text editor or IDE to start customizing your resume content.
+If you need to update the resume:
 
-3. Edit Content:\
-Modify the content within the HTML file to reflect your own professional experience, skills, and education. Replace the placeholder text with your information.
+1. Open the resume page on the website.
+2. Use your browser's **Print** function.
+3. Select **“Save as PDF”** (or equivalent) to export the updated resume.
+4. Save the PDF **directly in the root directory** of the project using the same filename as in the HTML code.
+5. Commit and push your changes.
 
-4. Customize Styles:\
-If desired, you can customize the CSS styles in the styles.css file to adjust colors, fonts, spacing, etc., to match your personal style or branding.
+The website will automatically use the updated file as long as the name remains the same.
 
-5. Preview and Test:\
-Open the index.html file in a web browser to preview your resume page. Ensure that everything looks and works as expected, and make any necessary adjustments.
+---
 
-6. Deploy:\
-Once you're satisfied with your resume page, you can deploy it to a web hosting service or integrate it into your personal website/portfolio.
+## 🛠️ Tech Stack
 
-## Credits
-HTML and CSS: Developed by kenybapin\
-Icon Credits: Icons used in this project are from Font Awesome.
+- **HTML / CSS / JavaScript**  
 
-## Feedback and Contributions
-Feedback, bug reports, and contributions are welcome! If you have any suggestions for improving this project or encounter any issues, please open an issue or submit a pull request.
+---
+
+## 📬 Contact
+
+If you’d like to get in touch, you can reach me through any of the links provided on the website.
