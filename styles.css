@@ -75,11 +75,7 @@ body{color:#000!important;background:0 0!important;print-color-adjust:exact;-web
 .button-with-lines,.line,.no-export,.sidebar,.toggle-button,h5:not(.mailh5){display:none!important}
 .mail{display:inline-block;color:gray;padding-bottom:50px;}
 .mail a{margin:0;color:gray;text-decoration:none;}
-
-
 .profile-info{padding-bottom:0!important;display:inline-block!important;text-align:left!important;}
-
-
 .job-grid-container-grid{display:flex!important;flex-wrap:wrap;gap:20px}
 .job-grid-container-grid>*{flex:0 0 48%}
 .fade-out-overlay{mask-image:none;-webkit-mask-image:none;opacity:1}
