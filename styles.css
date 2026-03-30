@@ -33,6 +33,7 @@ h5{font-weight:200;font-size:1.2rem;color:#43b488}
 .job a,.job p,li{color:#4e4e4e;text-decoration:none}
 .title{font-weight:700;font-size:.95rem;color:#4e4e4e;flex:1}
 .sub-title{color:#7d7d7d;font-weight:400!important}
+.education {margin-bottom:0 !important}
 .education span{font-size:.9rem;color:#b2b2b2;font-weight:700;border-right:3px solid #d3d3d3;pointer-events:none}
 .education .title,.formation .title{font-size:1rem;line-height:23px}
 .education .title{padding-left:10px}
