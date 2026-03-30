@@ -43,7 +43,7 @@ h5{font-weight:200;font-size:1.2rem;color:#43b488}
 .projects a:hover{color:#01b05e}
 .projects p{color:#4e4e4e;font-size:11pt}
 span{display:inline-block;font-size:13px;border-radius:10px;padding:5px 10px;background:#fff;margin:4px;color:#4e4e4e;border:1px solid #cdcccc;border-bottom-width:3px;transition:.4s ease;cursor:default!important}
-span.category{background-color:#f3f3f3;border-color:#bebebe;color:#7e7e7e;pointer-events:none;font-weight:700}
+span.category{background-color:#f3f3f3;border-color:#bebebe;pointer-events:none;}
 span:hover{background-color:#01b05e;border-color:#005a30;color:#fff;cursor:pointer;transform:scale(1.15)}
 .mail{display:none}
 #signature{font-size:15px;color:#999;text-align:center;margin-top:100px}
@@ -71,7 +71,7 @@ to{transform:scale(1)}
 to{opacity:1;transform:translateY(0)}
 }
 @media print{
-body{color:#000!important;background:0 0!important;print-color-adjust:exact;-webkit-print-color-adjust:exact}
+body{margin:0;color:#000!important;background:0 0!important;print-color-adjust:exact;-webkit-print-color-adjust:exact}
 .button-with-lines,.line,.no-export,.sidebar,.toggle-button,h5:not(.mailh5){display:none!important}
 .mail{display:inline-block;color:gray;padding-bottom:50px;}
 .mail a{margin:0;color:gray;text-decoration:none;}
@@ -81,7 +81,6 @@ body{color:#000!important;background:0 0!important;print-color-adjust:exact;-web
 .fade-out-overlay{mask-image:none;-webkit-mask-image:none;opacity:1}
 span{background:0 0;border:1px solid #ccc;border-bottom-width:3px;margin:0 0 5px 5px}
 @page{size:A4;margin:1cm}
-body{margin:0}
 .page-break{display:block;page-break-before:always;height:0;margin-top:1cm!important}
 }
 
