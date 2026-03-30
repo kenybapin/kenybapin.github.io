@@ -1,11 +1,11 @@
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:'DM Sans',sans-serif;line-height:1.6;color:#1a1a1a;display:flex;min-height:100vh;background-color:#fff;user-select:none;-webkit-user-select:none;-ms-user-select:none;transform:scale(1.1);transform-origin:0 0;width:90.9%;}
+body{font-family:'DM Sans',sans-serif;line-height:1.6;color:#1a1a1a;display:flex;min-height:100vh;background-color:#fff;user-select:none;-webkit-user-select:none;-ms-user-select:none;transform:scale(1.1);transform-origin:0 0;width:90.9%}
 .main{flex:1;padding:5rem;display:inline-block;justify-items:center}
 .main>*{max-width:900px;width:100%}
 .main,.sidebar{contain:paint}
 .content-container{max-width:700px;margin-bottom:70px}
-.sidebar{position:relative;display:flex;flex-direction:column;background:#000;color:#fff;width:100%;padding:2rem 3rem 100px;transform:translateX(100%);animation:slideInFromRight .4s ease-out forwards .4s}
+.sidebar{position:relative;display:flex;flex-direction:column;background:#000;color:#fff;width:100%;max-width:500px;padding:2rem 3rem 100px;transform:translateX(100%);animation:slideInFromRight .4s ease-out forwards .4s}
 .sidebar h3,.sidebar p,.sidebar ul{opacity:0;animation:fadeInTopToBottom 1s ease-out forwards 1s}
 .sidebar h3,.sidebar h3>a{color:#43b488;margin:2rem 0 1rem;font-size:large;font-weight:100}
 .sidebar ul{list-style:none;margin-bottom:5px}
@@ -19,7 +19,7 @@ body{font-family:'DM Sans',sans-serif;line-height:1.6;color:#1a1a1a;display:flex
 .profile-info img:hover{animation:shrink .4s ease-out forwards,float .5s ease-in-out infinite .4s}
 .profile h1{font-size:1.8rem;color:#333;font-weight:700;line-height:36px}
 .profile h2{color:rgba(51,51,51,.6);font-size:1.4rem;font-weight:500;line-height:22px}
-h3{font-weight:400;line-height:22px;font-size:1.6rem;color:#43b488;margin-bottom: 35px;}
+h3{font-weight:400;line-height:22px;font-size:1.6rem;color:#43b488;margin-bottom:35px}
 h5{font-weight:200;font-size:1.2rem;color:#43b488}
 .content,.content-container.expanded,.profile h1,.profile h2,.profile h5,.toggle-button{opacity:0;transform:translateY(40px);animation:slideUp .6s ease-out forwards!important}
 .profile h2{animation-delay:.1s}
@@ -43,7 +43,7 @@ h5{font-weight:200;font-size:1.2rem;color:#43b488}
 .projects a:hover{color:#01b05e}
 .projects p{color:#4e4e4e;font-size:11pt}
 span{display:inline-block;font-size:13px;border-radius:10px;padding:5px 10px;background:#fff;margin:4px;color:#4e4e4e;border:1px solid #cdcccc;border-bottom-width:3px;transition:.4s ease;cursor:default!important}
-span.category{background-color:#f3f3f3;border-color:#bebebe;pointer-events:none;}
+span.category{background-color:#f3f3f3;border-color:#bebebe;pointer-events:none}
 span:hover{background-color:#01b05e;border-color:#005a30;color:#fff;cursor:pointer;transform:scale(1.15)}
 .mail{display:none}
 #signature{font-size:15px;color:#999;text-align:center;margin-top:100px}
@@ -73,9 +73,9 @@ to{opacity:1;transform:translateY(0)}
 @media print{
 body{margin:0;color:#000!important;background:0 0!important;print-color-adjust:exact;-webkit-print-color-adjust:exact}
 .button-with-lines,.line,.no-export,.sidebar,.toggle-button,h5:not(.mailh5){display:none!important}
-.mail{display:inline-block;color:gray;padding-bottom:50px;}
-.mail a{margin:0;color:gray;text-decoration:none;}
-.profile-info{padding-bottom:0!important;display:inline-block!important;text-align:left!important;}
+.mail{display:inline-block;color:gray;padding-bottom:50px}
+.mail a{margin:0;color:gray;text-decoration:none}
+.profile-info{padding-bottom:0!important;display:inline-block!important;text-align:left!important}
 .job-grid-container-grid{display:flex!important;flex-wrap:wrap;gap:20px}
 .job-grid-container-grid>*{flex:0 0 48%}
 .fade-out-overlay{mask-image:none;-webkit-mask-image:none;opacity:1}
@@ -83,16 +83,13 @@ span{background:0 0;border:1px solid #ccc;border-bottom-width:3px;margin:0 0 5px
 @page{size:A4;margin:1cm}
 .page-break{display:block;page-break-before:always;height:0;margin-top:1cm!important}
 }
-
-
 @media (max-width:1100px){
 body{flex-direction:column;width:100%;transform:none}
 .sidebar{width:100%;order:2}
-.main{order:1;padding:2rem;}
+.main{order:1;padding:2rem}
 .profile-info{flex-direction:column;text-align:center}
 .job-grid-container-grid{display:grid;width:auto;grid-template-columns:none}
 }
-
 @media screen and (min-width:1920px){
 body{zoom:1.25}
 }
