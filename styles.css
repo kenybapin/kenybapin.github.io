@@ -5,6 +5,8 @@ body{font-family:'DM Sans',sans-serif;line-height:1.6;color:#1a1a1a;display:flex
 .main>*{max-width:900px;width:100%}
 .main,.sidebar{contain:paint}
 .content-container{max-width:700px;margin-bottom:70px}
+
+/* sidebar : <aside> au lieu de <div>, même rendu */
 .sidebar{position:relative;display:flex;flex-direction:column;background:#000;color:#fff;width:100%;max-width:500px;padding:2rem 3rem 100px;transform:translateX(100%);animation:slideInFromRight .4s ease-out forwards .4s}
 .sidebar h3,.sidebar p,.sidebar ul{opacity:0;animation:fadeInTopToBottom 1s ease-out forwards 1s}
 .sidebar h3,.sidebar h3>a{color:#43b488;margin:2rem 0 1rem;font-size:large;font-weight:100}
@@ -12,8 +14,13 @@ body{font-family:'DM Sans',sans-serif;line-height:1.6;color:#1a1a1a;display:flex
 .sidebar li{margin-bottom:.5rem;font-size:.95rem}
 .sidebar a,.sidebar li{white-space:nowrap}
 .sidebar a,.sidebar p{text-decoration:none;font-weight:100;color:#fff}
-.sidebar a{display:inline-flex;align-items:center;position:relative}
+.sidebar a{display:inline-flex;align-items:center;gap:6px;position:relative}
 .sidebar a:hover,.sidebar svg:hover{color:#43b488}
+
+/* Ajout d'un outline visible au focus pour l'accessibilité (WCAG 2.4.7) */
+.sidebar a:focus-visible{outline:2px solid #43b488;outline-offset:2px;border-radius:2px}
+a:focus-visible{outline:2px solid #43b488;outline-offset:2px;border-radius:2px}
+
 .profile-info{display:flex;align-items:center;gap:1rem;padding-bottom:60px}
 .profile-info img{width:80px;height:80px;border-radius:50%;margin:0 5px;transform:scale(.2);transition:.4s ease;animation:shrink .4s ease-out forwards}
 .profile-info img:hover{animation:shrink .4s ease-out forwards,float .5s ease-in-out infinite .4s}
@@ -33,7 +40,7 @@ h5{font-weight:200;font-size:1.2rem;color:#43b488}
 .job a,.job p,li{color:#4e4e4e;text-decoration:none}
 .title{font-weight:700;font-size:.95rem;color:#4e4e4e;flex:1}
 .sub-title{color:#7d7d7d;font-weight:400!important}
-.education {margin-bottom:0 !important}
+.education{margin-bottom:0!important}
 .education span{font-size:.9rem;color:#b2b2b2;font-weight:700;border-right:3px solid #d3d3d3;pointer-events:none}
 .education .title,.formation .title{font-size:1rem;line-height:23px}
 .education .title{padding-left:10px}
@@ -54,6 +61,7 @@ span:hover{background-color:#01b05e;border-color:#005a30;color:#fff;cursor:point
 .year{color:#90c1ad;font-size:.9rem;text-align:center;width:50px;background:#fff;font-weight:700;border-right:3px solid #b4dfce;padding:7px;white-space:nowrap}
 svg{width:40px}
 .end{padding:0!important}
+
 @keyframes slideInFromRight{
 to{transform:translateX(0)}
 }
@@ -71,6 +79,7 @@ to{transform:scale(1)}
 @keyframes slideUp{
 to{opacity:1;transform:translateY(0)}
 }
+
 @media print{
 body{margin:0;color:#000!important;background:0 0!important;print-color-adjust:exact;-webkit-print-color-adjust:exact}
 .button-with-lines,.line,.no-export,.sidebar,.toggle-button,h5:not(.mailh5){display:none!important}
@@ -84,6 +93,7 @@ span{background:0 0;border:1px solid #ccc;border-bottom-width:3px;margin:0 0 5px
 @page{size:A4;margin:1cm}
 .page-break{display:block;page-break-before:always;height:0;margin-top:1cm!important}
 }
+
 @media (max-width:1100px){
 body{flex-direction:column;width:100%;transform:none}
 .sidebar{width:100%;order:2}
