@@ -64,7 +64,7 @@ h5{font-weight:200;font-size:1.2rem;color:var(--color-accent)}
 .education span{font-size:.9rem;color:var(--color-text-dark);font-weight:700;border-right:3px solid var(--color-accent);pointer-events:none}
 .education .title,.formation .title{font-size:1rem;line-height:23px}
 .education .title{padding-left:10px}
-.card,.projects{border-left:3px solid var(--color-accent);max-width:700px}
+.card,.projects{border-left:3px solid #a4d6c3;max-width:700px}
 .card{margin-bottom:15px}
 .projects{margin-bottom:25px;padding-left:10px}
 .projects a,h4{color:var(--color-text-muted);font-weight:700!important}
@@ -106,7 +106,7 @@ span{background:0 0;border:1px solid #ccc;border-bottom-width:3px;margin:0 0 5px
 body{flex-direction:column;width:100%;transform:none}
 .sidebar{width:100%;order:2}
 .main{order:1;padding:2rem}
-.profile-info{flex-direction:column;text-align:center}
+.profile-info{flex-direction:column;text-align:center;gap: 0;}
 .job-grid-container-grid{display:grid;width:auto;grid-template-columns:none}
 }
 @media screen and (min-width:1920px){body{zoom:1.25}}
